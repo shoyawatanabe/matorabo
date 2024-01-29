@@ -3,7 +3,7 @@ function simpleWordGuessingGame()
     disp('--- 単語当てゲーム ---');
     
     # 単語リスト
-    wordList = {'apple', 'banana', 'orange', 'grape', 'watermelon', 'kiwi', 'pineapple', 'strawberry'};
+    単語リスト = {'リンゴ', 'バナナ', 'オレンジ', 'ブドウ', 'スイカ', 'キウイ', 'パイナップル', 'イチゴ'};
     
     # ゲームループ
     while true
@@ -28,9 +28,9 @@ function simpleWordGuessingGame()
         end
         
         # 結果の表示
-        if strcmpi(guess, targetWord)
+        if strcmpi(guess, targetWord) #単語が当たれば
             disp(['おめでとうございます！"', targetWord, '"を当てました！']);
-        else
+        else #それ以外なら
             disp(['残念！正解は"', targetWord, '"でした。もう一度挑戦してください。']);
         end
     end
